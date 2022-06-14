@@ -385,11 +385,15 @@
       <form action="https://formsubmit.co/percival.roberts13@gmail.com" method="POST">
 
          <h3>get in touch</h3>
-         <input type="text" placeholder="Name" class="box" required>
-         <input type="email" name="email" placeholder="Email Address" class="box">
+         <input type="text" name="name" placeholder="Name" class="box" required>
+         <input type="email" name="email" placeholder="Email Address" class="box" required>
          <input type="number" placeholder="Phone number" class="box" required>
+         <input type="hidden" name="_subject" value="New submission!">
+         <input type="hidden" name="_autoresponse" value="Thank you for reaching out, we will respond to you shortly!">
+         <input type="hidden" name="_template" value="basic">
          <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
-         <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+         <!-- <input type="text" name ="message" placeholder ="Write your message" required> -->
+         <textarea name="text" placeholder="Message" class="box" id="" cols="30" rows="10" required></textarea>
          <input type="submit" value="send message" class="btn">
           
       </form>
