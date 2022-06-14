@@ -310,6 +310,7 @@ header label{
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   border: var(--border);
+  border-radius: 10px;
 }
 
 .services .box-container .box:hover img {
