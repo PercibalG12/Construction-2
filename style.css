@@ -116,6 +116,37 @@ header label{
   opacity: 0;
 }
 
+.scrollTop{
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--yellow);
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: var(--black);
+  z-index: 999;
+  font-size: 30px;
+  border-radius: 16px ;
+  cursor: pointer;
+  /* pointer-events: none; */
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scrollTop.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.scrollTop:hover{
+  background: var(--black);
+  color: var(--yellow);
+}
+
+
 .header .logo {
   font-size: 2.5rem;
   color: var(--black);
